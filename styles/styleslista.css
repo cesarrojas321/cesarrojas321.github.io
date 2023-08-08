@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(/images/logot.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+    height: 100vh;   
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*PERFIL*/
+
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+  }
+
+  h2 {  
+    color: #e3eef0;
+
+  }
+  .fecha {
+    width: 20%;
+    margin: auto;
+    background: rgb(65, 79, 89);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .fecha__completa {
+    text-align: center;
+  }
+  .hora {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    font-weight: bold;
+    color: #1185ea;
+  }
+
+
+.perfil h1 {
+    color: whitesmoke;
+    margin-top: 30px;
+}
+
+
+#fecha {
+    color: whitesmoke;
+    padding: 50px 0 5px 0px;
+
+}
+
+/*AGREGAR TAREA*/
+
+.agregar-tarea {
+    background-color: whitesmoke ;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: whitesmoke;
+    padding-left: 10px;
+
+}
+.agregar-tarea input::placeholder {
+   font-size: 20px;
+   color: black;
+}
+
+.agregar-tarea i{
+    font-size: 35px;
+    color: #09ec09;
+
+}
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*SECCION DE TAREA */
+
+.seccion-tarea h3 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    margin: 5px 0;
+
+}
+.seccion-tarea i {
+    font-size: 25px;
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+
+}
+
+
+.seccion-tarea i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color : red;
+} 
+
+
+

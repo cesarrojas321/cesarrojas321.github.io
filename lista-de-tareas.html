@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ada70605ea.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+    <link rel="stylesheet" href="styles/styleslista.css">
+    <title>lISTA DE TAREAS</title>
+
+   <!--  Hola, no logre terminar por fanta de tiempo. Me faltan unas cosas en Javascrip -->
+    
+    
+</head>
+<body>
+
+    <h1 class="titulo">Hola, Cesar Rojas</h1>
+    
+
+    <main class="fecha">
+        
+        <h2 class="fecha__completa" id="fecha__completa"></h2>
+        <div class="hora">
+            <div class="hora__estado" id="hora__estado">
+                PM
+            </div>
+            <div class="hora__tiempo" id="hora__tiempo">
+                12:05:00
+            </div>
+        </div>
+    </main>
+    
+<div class="container">
+    <div class="perfil">
+        <h1>Lista de Tareas</h1>
+    </div>
+
+    <div class="agregar-tarea">
+        <input type="text" id="input" placeholder="Agregar una tarea">
+        <i id="boton-enter"class="fas fa-plus-circle agregar"></i>
+        
+    </div>
+
+    
+    <div class="seccion-tarea">
+        <h3>Estas son tus Tareas Pendientes: </h3>
+        <ul id="lista">
+        </ul>
+    </div>   
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
