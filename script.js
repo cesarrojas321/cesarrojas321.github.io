@@ -42,12 +42,6 @@ let LIST
 
 let id // para que inicie en 0 cada tarea tendra un id diferente
 
-//creacion de fecha actualizada 
-
-/* let FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'}) */
-
-
 
 // funcion de agregar tarea 
 
@@ -76,7 +70,7 @@ function tareaRealizada(element) {
     element.classList.toggle(uncheck)
     element.parentNode.querySelector('.text').classList.toggle(lineThrough)
     LIST[element.id].realizado = LIST[element.id].realizado ?false :true //Si
-
+    
     Swal.fire({
         title: 'Felicidades !',
         text: 'has terminado tu tarea.',
@@ -85,6 +79,8 @@ function tareaRealizada(element) {
         imageHeight: 200,
         imageAlt: 'Custom image',
       })
+
+   
 }
 
 // funcion de Eliminar tarea 
@@ -102,8 +98,6 @@ function tareaEliminada(element){
         'error'
       )
 
-
-    
 }
 
 
@@ -118,6 +112,7 @@ botonEnter.addEventListener('click', ()=> {
             id : id,
             realizado : false,
             eliminado : false
+            
         })
         localStorage.setItem('TODO',JSON.stringify(LIST))
         id++
@@ -155,6 +150,8 @@ lista.addEventListener('click',function(event){
     let element = event.target 
     let elementData = element.attributes.data.value
     console.log(elementData)
+
+    
     
     if(elementData == 'realizado') {
         tareaRealizada(element)
@@ -164,6 +161,8 @@ lista.addEventListener('click',function(event){
         console.log("elimnado")
     }
     localStorage.setItem('TODO',JSON.stringify(LIST))
+
+
 })
 
 
@@ -178,6 +177,8 @@ if(data){
 }else {
     LIST = []
     id = 0
+
+    
 }
 
 
