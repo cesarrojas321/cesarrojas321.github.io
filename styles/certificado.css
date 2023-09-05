@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background-color: #363635;
+    
+  }
+
+  h1{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .caja{
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .img{
+    width: 1000px;
+    height: 600px;
+    
+  }
+   
