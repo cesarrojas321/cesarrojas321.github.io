@@ -542,7 +542,7 @@ body {
     width: 30px;
 }
 
-/* Media queries */
+/* Media queries de 800px  para dispocitivos Moviles*/
 
 @media (max-width:800px){
     .nav__menu{
@@ -653,6 +653,8 @@ body {
     }
 
 }
+
+/* Media queries de 600px  para dispocitivos Moviles*/
 
 @media (max-width:600px){
     .hero__title{
